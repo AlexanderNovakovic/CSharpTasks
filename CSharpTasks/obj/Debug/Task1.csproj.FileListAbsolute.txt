@@ -1,0 +1,5 @@
+c:\users\storm\documents\visual studio 2015\Projects\adventofcode2018\day1\CSharpTasks\CSharpTasks\bin\Debug\CSharpTasks.exe
+c:\users\storm\documents\visual studio 2015\Projects\adventofcode2018\day1\CSharpTasks\CSharpTasks\bin\Debug\CSharpTasks.pdb
+c:\users\storm\documents\visual studio 2015\Projects\adventofcode2018\day1\CSharpTasks\CSharpTasks\obj\Debug\Task1.csprojResolveAssemblyReference.cache
+c:\users\storm\documents\visual studio 2015\Projects\adventofcode2018\day1\CSharpTasks\CSharpTasks\obj\Debug\CSharpTasks.exe
+c:\users\storm\documents\visual studio 2015\Projects\adventofcode2018\day1\CSharpTasks\CSharpTasks\obj\Debug\CSharpTasks.pdb

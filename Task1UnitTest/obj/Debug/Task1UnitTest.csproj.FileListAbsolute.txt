@@ -1,0 +1,17 @@
+c:\users\storm\documents\visual studio 2015\Projects\adventofcode2018\day1\CSharpTasks\Task1UnitTest\bin\Debug\xunit.abstractions.dll
+c:\users\storm\documents\visual studio 2015\Projects\adventofcode2018\day1\CSharpTasks\Task1UnitTest\bin\Debug\xunit.runner.visualstudio.testadapter.dll
+c:\users\storm\documents\visual studio 2015\Projects\adventofcode2018\day1\CSharpTasks\Task1UnitTest\bin\Debug\xunit.runner.reporters.net452.dll
+c:\users\storm\documents\visual studio 2015\Projects\adventofcode2018\day1\CSharpTasks\Task1UnitTest\bin\Debug\xunit.runner.utility.net452.dll
+c:\users\storm\documents\visual studio 2015\Projects\adventofcode2018\day1\CSharpTasks\Task1UnitTest\bin\Debug\Task1UnitTest.dll
+c:\users\storm\documents\visual studio 2015\Projects\adventofcode2018\day1\CSharpTasks\Task1UnitTest\bin\Debug\Task1UnitTest.pdb
+c:\users\storm\documents\visual studio 2015\Projects\adventofcode2018\day1\CSharpTasks\Task1UnitTest\bin\Debug\CSharpTasks.exe
+c:\users\storm\documents\visual studio 2015\Projects\adventofcode2018\day1\CSharpTasks\Task1UnitTest\bin\Debug\xunit.assert.dll
+c:\users\storm\documents\visual studio 2015\Projects\adventofcode2018\day1\CSharpTasks\Task1UnitTest\bin\Debug\xunit.core.dll
+c:\users\storm\documents\visual studio 2015\Projects\adventofcode2018\day1\CSharpTasks\Task1UnitTest\bin\Debug\xunit.execution.desktop.dll
+c:\users\storm\documents\visual studio 2015\Projects\adventofcode2018\day1\CSharpTasks\Task1UnitTest\bin\Debug\CSharpTasks.pdb
+c:\users\storm\documents\visual studio 2015\Projects\adventofcode2018\day1\CSharpTasks\Task1UnitTest\bin\Debug\xunit.assert.xml
+c:\users\storm\documents\visual studio 2015\Projects\adventofcode2018\day1\CSharpTasks\Task1UnitTest\bin\Debug\xunit.core.xml
+c:\users\storm\documents\visual studio 2015\Projects\adventofcode2018\day1\CSharpTasks\Task1UnitTest\bin\Debug\xunit.execution.desktop.xml
+c:\users\storm\documents\visual studio 2015\Projects\adventofcode2018\day1\CSharpTasks\Task1UnitTest\obj\Debug\Task1UnitTest.csprojResolveAssemblyReference.cache
+c:\users\storm\documents\visual studio 2015\Projects\adventofcode2018\day1\CSharpTasks\Task1UnitTest\obj\Debug\Task1UnitTest.dll
+c:\users\storm\documents\visual studio 2015\Projects\adventofcode2018\day1\CSharpTasks\Task1UnitTest\obj\Debug\Task1UnitTest.pdb
