@@ -17,6 +17,5 @@ namespace Task2UnitTests
 
             Assert.Equal(expected, num.Sum());
         }
-
     }
 }
