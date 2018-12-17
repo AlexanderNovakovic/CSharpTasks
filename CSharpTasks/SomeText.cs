@@ -2,6 +2,7 @@
 {
     public class SomeText
     {
-        public string ReturnHelloWorld() => "Hello World!";        
+        public string HelloWorld() => 
+            "Hello World!";        
     }
 }

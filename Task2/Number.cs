@@ -1,10 +1,17 @@
 ﻿namespace Task2
 {
-    public class Number
+    public class NumberExpression
     {
-        public int FirstNumber { get; set; }
-        public int SecondNumber { get; set; }        
+        public int First { get; }
+        public int Second { get; }
 
-        public int Sum() => FirstNumber + SecondNumber;
+        public NumberExpression(int first, int second)
+        {
+            First = first;
+            Second = second;
+        }
+
+        public int Sum() => 
+            First + Second;
     }
 }

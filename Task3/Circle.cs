@@ -1,11 +1,18 @@
-﻿using System;
+﻿using static System.Math;
 
 namespace Task3
 {
     public class Circle
     {
-        public double CalculateCircumference(double r) => Math.Round((2 * r * Math.PI), 2);
+        public double Radius { get; }
 
-        public double CalculateArea(double r) => Math.Round((Math.Pow(r, 2) * Math.PI), 2);
+        public Circle(double radius) => 
+            Radius = radius;
+
+        public double Circumference() => 
+            Round(2 * Radius * PI, 2);
+
+        public double Area() => 
+            Round((Pow(Radius, 2) * PI), 2);
     }
 }

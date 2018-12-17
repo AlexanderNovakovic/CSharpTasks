@@ -3,3 +3,9 @@ c:\users\storm\documents\visual studio 2015\Projects\adventofcode2018\day1\CShar
 c:\users\storm\documents\visual studio 2015\Projects\adventofcode2018\day1\CSharpTasks\CSharpTasks\obj\Debug\Task1.csprojResolveAssemblyReference.cache
 c:\users\storm\documents\visual studio 2015\Projects\adventofcode2018\day1\CSharpTasks\CSharpTasks\obj\Debug\CSharpTasks.exe
 c:\users\storm\documents\visual studio 2015\Projects\adventofcode2018\day1\CSharpTasks\CSharpTasks\obj\Debug\CSharpTasks.pdb
+C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\CSharpTasks\bin\Debug\CSharpTasks.pdb
+C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\CSharpTasks\obj\Debug\Task1.csproj.CoreCompileInputs.cache
+C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\CSharpTasks\obj\Debug\CSharpTasks.pdb
+C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\CSharpTasks\obj\Debug\Task1.csprojAssemblyReference.cache
+C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\CSharpTasks\bin\Debug\CSharpTasks.dll
+C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\CSharpTasks\obj\Debug\CSharpTasks.dll
