@@ -21,7 +21,6 @@ C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2UnitTests\bin\Debug\xunit.runne
 C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2UnitTests\bin\Debug\xunit.abstractions.dll
 C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2UnitTests\bin\Debug\Task2UnitTests.dll
 C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2UnitTests\bin\Debug\Task2UnitTests.pdb
-C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2UnitTests\bin\Debug\Task2.exe
 C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2UnitTests\bin\Debug\xunit.assert.dll
 C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2UnitTests\bin\Debug\xunit.core.dll
 C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2UnitTests\bin\Debug\xunit.execution.desktop.dll
@@ -53,3 +52,4 @@ C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task2UnitTests\obj\De
 C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task2UnitTests\bin\Debug\Task2.dll
 C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task2UnitTests\bin\Debug\Task2UnitTests.dll.CodeAnalysisLog.xml
 C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task2UnitTests\bin\Debug\Task2UnitTests.dll.lastcodeanalysissucceeded
+C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2UnitTests\bin\Debug\Task2.dll

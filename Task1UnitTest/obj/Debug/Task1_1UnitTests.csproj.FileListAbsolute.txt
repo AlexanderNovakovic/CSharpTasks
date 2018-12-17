@@ -1,0 +1,17 @@
+C:\Users\StorM\Documents\GitHub\CSharpTasks\Task1UnitTest\bin\Debug\xunit.runner.visualstudio.testadapter.dll
+C:\Users\StorM\Documents\GitHub\CSharpTasks\Task1UnitTest\bin\Debug\xunit.runner.reporters.net452.dll
+C:\Users\StorM\Documents\GitHub\CSharpTasks\Task1UnitTest\bin\Debug\xunit.runner.utility.net452.dll
+C:\Users\StorM\Documents\GitHub\CSharpTasks\Task1UnitTest\bin\Debug\xunit.abstractions.dll
+C:\Users\StorM\Documents\GitHub\CSharpTasks\Task1UnitTest\bin\Debug\Task1UnitTest.dll
+C:\Users\StorM\Documents\GitHub\CSharpTasks\Task1UnitTest\bin\Debug\Task1UnitTest.pdb
+C:\Users\StorM\Documents\GitHub\CSharpTasks\Task1UnitTest\bin\Debug\CSharpTasks.dll
+C:\Users\StorM\Documents\GitHub\CSharpTasks\Task1UnitTest\bin\Debug\xunit.assert.dll
+C:\Users\StorM\Documents\GitHub\CSharpTasks\Task1UnitTest\bin\Debug\xunit.core.dll
+C:\Users\StorM\Documents\GitHub\CSharpTasks\Task1UnitTest\bin\Debug\xunit.execution.desktop.dll
+C:\Users\StorM\Documents\GitHub\CSharpTasks\Task1UnitTest\bin\Debug\CSharpTasks.pdb
+C:\Users\StorM\Documents\GitHub\CSharpTasks\Task1UnitTest\bin\Debug\xunit.assert.xml
+C:\Users\StorM\Documents\GitHub\CSharpTasks\Task1UnitTest\bin\Debug\xunit.core.xml
+C:\Users\StorM\Documents\GitHub\CSharpTasks\Task1UnitTest\bin\Debug\xunit.execution.desktop.xml
+C:\Users\StorM\Documents\GitHub\CSharpTasks\Task1UnitTest\obj\Debug\Task1_1UnitTests.csprojResolveAssemblyReference.cache
+C:\Users\StorM\Documents\GitHub\CSharpTasks\Task1UnitTest\obj\Debug\Task1UnitTest.dll
+C:\Users\StorM\Documents\GitHub\CSharpTasks\Task1UnitTest\obj\Debug\Task1UnitTest.pdb

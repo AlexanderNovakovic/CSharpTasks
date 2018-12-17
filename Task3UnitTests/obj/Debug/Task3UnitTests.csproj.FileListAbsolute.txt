@@ -5,7 +5,6 @@ C:\Users\StorM\Documents\GitHub\CSharpTasks\Task3UnitTests\bin\Debug\xunit.runne
 C:\Users\StorM\Documents\GitHub\CSharpTasks\Task3UnitTests\bin\Debug\Task3UnitTests.dll.config
 C:\Users\StorM\Documents\GitHub\CSharpTasks\Task3UnitTests\bin\Debug\Task3UnitTests.dll
 C:\Users\StorM\Documents\GitHub\CSharpTasks\Task3UnitTests\bin\Debug\Task3UnitTests.pdb
-C:\Users\StorM\Documents\GitHub\CSharpTasks\Task3UnitTests\bin\Debug\Task3.exe
 C:\Users\StorM\Documents\GitHub\CSharpTasks\Task3UnitTests\bin\Debug\xunit.assert.dll
 C:\Users\StorM\Documents\GitHub\CSharpTasks\Task3UnitTests\bin\Debug\xunit.core.dll
 C:\Users\StorM\Documents\GitHub\CSharpTasks\Task3UnitTests\bin\Debug\xunit.execution.desktop.dll
@@ -39,3 +38,4 @@ C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task3UnitTests\bin\De
 C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task3UnitTests\bin\Debug\Task3.dll.config
 C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task3UnitTests\bin\Debug\Task3UnitTests.dll.CodeAnalysisLog.xml
 C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task3UnitTests\bin\Debug\Task3UnitTests.dll.lastcodeanalysissucceeded
+C:\Users\StorM\Documents\GitHub\CSharpTasks\Task3UnitTests\bin\Debug\Task3.dll

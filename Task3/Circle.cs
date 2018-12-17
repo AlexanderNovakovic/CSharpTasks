@@ -6,8 +6,10 @@ namespace Task3
     {
         public double Radius { get; }
 
-        public Circle(double radius) => 
+        public Circle(double radius)
+        {
             Radius = radius;
+        }
 
         public double Circumference() => 
             Round(2 * Radius * PI, 2);
