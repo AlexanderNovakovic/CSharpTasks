@@ -51,3 +51,5 @@ C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task2UnitTests\obj\De
 C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task2UnitTests\obj\Debug\Task2UnitTests.dll
 C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task2UnitTests\obj\Debug\Task2UnitTests.pdb
 C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task2UnitTests\bin\Debug\Task2.dll
+C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task2UnitTests\bin\Debug\Task2UnitTests.dll.CodeAnalysisLog.xml
+C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task2UnitTests\bin\Debug\Task2UnitTests.dll.lastcodeanalysissucceeded

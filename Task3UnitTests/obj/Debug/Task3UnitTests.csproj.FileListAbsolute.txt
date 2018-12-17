@@ -37,3 +37,5 @@ C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task3UnitTests\obj\De
 C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task3UnitTests\obj\Debug\Task3UnitTests.pdb
 C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task3UnitTests\bin\Debug\Task3.dll
 C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task3UnitTests\bin\Debug\Task3.dll.config
+C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task3UnitTests\bin\Debug\Task3UnitTests.dll.CodeAnalysisLog.xml
+C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task3UnitTests\bin\Debug\Task3UnitTests.dll.lastcodeanalysissucceeded

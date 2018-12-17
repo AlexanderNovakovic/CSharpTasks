@@ -11,3 +11,5 @@ C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task4\obj\Debug\Task4
 C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task4\bin\Debug\Task4.dll.config
 C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task4\bin\Debug\Task4.dll
 C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task4\obj\Debug\Task4.dll
+C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task4\bin\Debug\Task4.dll.CodeAnalysisLog.xml
+C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task4\bin\Debug\Task4.dll.lastcodeanalysissucceeded

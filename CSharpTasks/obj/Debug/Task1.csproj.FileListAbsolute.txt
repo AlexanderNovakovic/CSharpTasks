@@ -9,3 +9,5 @@ C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\CSharpTasks\obj\Debug
 C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\CSharpTasks\obj\Debug\Task1.csprojAssemblyReference.cache
 C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\CSharpTasks\bin\Debug\CSharpTasks.dll
 C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\CSharpTasks\obj\Debug\CSharpTasks.dll
+C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\CSharpTasks\bin\Debug\CSharpTasks.dll.CodeAnalysisLog.xml
+C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\CSharpTasks\bin\Debug\CSharpTasks.dll.lastcodeanalysissucceeded
