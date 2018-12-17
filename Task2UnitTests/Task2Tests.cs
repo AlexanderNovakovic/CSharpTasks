@@ -9,7 +9,7 @@ namespace Task2UnitTests
         [InlineData(2, 3, 5)]
         [InlineData(-22, 11, -11)]
         [InlineData(2, 18, 20)]
-        public void TaskTwoTest(int a, int b, int expected) => 
+        public void SumTests(int a, int b, int expected) => 
             Assert.Equal(expected, new NumberExpression(a, b).Sum());
     }
 }
