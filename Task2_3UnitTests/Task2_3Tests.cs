@@ -1,4 +1,6 @@
-﻿using Xunit;
+﻿using System.Collections.Generic;
+using Task2_3;
+using Xunit;
 using static Task2_3.MathExtensions;
 
 namespace Task2_3UnitTests
@@ -6,8 +8,23 @@ namespace Task2_3UnitTests
     public class Task2_3Tests
     {
         [Theory]
-        [InlineData(1, 4, 2, 5, 3, 6, new double[] { -1, 2 })]
-        public void SolveSystemOfTwoEquationsTest(double a1, double a2, double b1, double b2, double c1, double c2, double[] expected) =>
-            Assert.Equal(expected, Solve(DeterminatX(b1, b2, c1, c2), DeterminantY(a1, a2, c1, c2), Determinant(a1, a2, b1, b2)));
+        [MemberData(nameof(SolveTestsParams))]
+        public void SolveSystemOfTwoEquationsTest(Equation first, Equation second, EquationSoultion expected)
+        {
+            EquationSoultion actual = Solve(first, second);
+
+            Assert.Equal(expected.X, actual.X);
+            Assert.Equal(expected.Y, actual.Y);
+        }
+
+        public static IEnumerable<object[]> SolveTestsParams()
+        {
+            yield return new object[]
+            {
+                new Equation(1, 2, 3),
+                new Equation(4, 5, 6),
+                new EquationSoultion(-1, 2)
+            };
+        }
     }
 }

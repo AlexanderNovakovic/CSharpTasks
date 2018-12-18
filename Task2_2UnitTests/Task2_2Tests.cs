@@ -7,7 +7,7 @@ namespace Task2_2UnitTests
     {
         [Theory]
         [InlineData(new double[] { 7, 3, 66, 12, 5 }, new double[] { 3, 5, 7, 12, 66 })]
-        public static void SortAscendingTest(double[] numbers, double[] expected) =>
-            Assert.Equal(expected, SortAscending(numbers));
+        public static void SortTest(double[] numbers, double[] expected) =>
+            Assert.Equal(expected, Sort(numbers));
     }
 }
