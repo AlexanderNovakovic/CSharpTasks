@@ -12,6 +12,8 @@ C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2UnitTests\bin\Debug\Task2.pdb
 C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2UnitTests\bin\Debug\xunit.assert.xml
 C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2UnitTests\bin\Debug\xunit.core.xml
 C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2UnitTests\bin\Debug\xunit.execution.desktop.xml
-C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2UnitTests\obj\Debug\Task1_2UnitTests.csprojResolveAssemblyReference.cache
 C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2UnitTests\obj\Debug\Task2UnitTests.dll
 C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2UnitTests\obj\Debug\Task2UnitTests.pdb
+C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2UnitTests\obj\Debug\Task1_2UnitTests.csprojAssemblyReference.cache
+C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2UnitTests\obj\Debug\Task1_2UnitTests.csproj.CoreCompileInputs.cache
+C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2UnitTests\obj\Debug\Task1_2UnitTests.csproj.CopyComplete
