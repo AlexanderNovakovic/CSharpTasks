@@ -25,5 +25,10 @@ namespace Task2_6UnitTests
         [InlineData(5, 111.39838)]
         public void SumOfNFactoralsDevidedByFractionsTest(int n, double expected) =>
             Assert.Equal(expected, Math.Round(SumOfNFactoralsDevidedByFractions(n), 5));
+
+        [Theory]
+        [InlineData(5, 0.76797)]
+        public void CalculateFInalSumTest(int n, double expected) =>
+            Assert.Equal(expected, Math.Round(CalculateFInalSum(n), 5));
     }
 }

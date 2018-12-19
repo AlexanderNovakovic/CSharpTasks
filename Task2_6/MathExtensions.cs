@@ -1,17 +1,18 @@
 ﻿using System;
+using static System.Math;
 
 namespace Task2_6
 {
     public static class MathExtensions
     {
-        public static double SumOfNNumbers(int n)
+        public static double CalculateFInalSum(int n)
         {
             Validate(n);
 
             double sum = 0;
 
             for (int i = 1; i <= n; i++)
-                sum += i;
+                sum += Pow(-1, i - 1) * SumOfNNumbers(i) / SumOfSqares(i);
 
             return sum;
         }
@@ -54,6 +55,30 @@ namespace Task2_6
             {
                 sum += NFactorial(i);
             }
+
+            return sum;
+        }
+
+        public static double SumOfSqares(int n)
+        {
+            Validate(n);
+
+            double sum = 0;
+
+            for (int i = 1; i <= n; i++)
+                sum += i * i;
+
+            return sum;
+        }
+
+        public static double SumOfNNumbers(int n)
+        {
+            Validate(n);
+
+            double sum = 0;
+
+            for (int i = 1; i <= n; i++)
+                sum += i;
 
             return sum;
         }

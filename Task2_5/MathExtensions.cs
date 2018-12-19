@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using static System.Math;
 
 namespace Task2_5
@@ -13,28 +12,14 @@ namespace Task2_5
             double xMin = equation.XMin;
             double xMax = equation.XMax;
             double dX = equation.DX;
-
-            if(Validate(xMin, xMax, dX))
+                        
+            for (double x = xMin; x <= xMax; x += dX)
             {
-                for (double x = xMin; x <= xMax; x += dX)
-                {
-                    double y = (Pow(x, 2) - 2 * x - 2) / (Pow(x, 2) + 1);
-                    solutions.Add(y);
-                }
+                double y = (Pow(x, 2) - 2 * x - 2) / (Pow(x, 2) + 1);
+                solutions.Add(y);
             }
-
+            
             return solutions.ToArray();
-        }
-
-        public static bool Validate(double xMin, double xMax, double dX)
-        {
-            if (dX <= 0)
-                throw new ArgumentOutOfRangeException(nameof(dX));
-
-            if (xMin >= xMax)
-                throw new ArgumentOutOfRangeException(nameof(xMin));
-
-            return true;
-        }
+        }                
     }
 }
