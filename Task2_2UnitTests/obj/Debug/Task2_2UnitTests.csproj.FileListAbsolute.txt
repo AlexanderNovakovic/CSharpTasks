@@ -15,10 +15,10 @@ C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2_2UnitTests\bin\Debug\xunit.cor
 C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2_2UnitTests\bin\Debug\xunit.execution.desktop.xml
 C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2_2UnitTests\obj\Debug\Task2_2UnitTests.dll
 C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2_2UnitTests\obj\Debug\Task2_2UnitTests.pdb
+C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task2_2UnitTests\bin\Debug\xunit.abstractions.dll
 C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task2_2UnitTests\bin\Debug\xunit.runner.visualstudio.testadapter.dll
 C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task2_2UnitTests\bin\Debug\xunit.runner.reporters.net452.dll
 C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task2_2UnitTests\bin\Debug\xunit.runner.utility.net452.dll
-C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task2_2UnitTests\bin\Debug\xunit.abstractions.dll
 C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task2_2UnitTests\bin\Debug\Task2_2UnitTests.dll
 C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task2_2UnitTests\bin\Debug\Task2_2UnitTests.pdb
 C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task2_2UnitTests\bin\Debug\Task2_2.dll

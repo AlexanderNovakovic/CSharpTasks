@@ -17,10 +17,10 @@ C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2_8UnitTests\obj\Debug\Task2_8Un
 C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2_8UnitTests\obj\Debug\Task2_8UnitTests.csproj.CopyComplete
 C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2_8UnitTests\obj\Debug\Task2_8UnitTests.dll
 C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2_8UnitTests\obj\Debug\Task2_8UnitTests.pdb
+C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task2_8UnitTests\bin\Debug\xunit.abstractions.dll
 C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task2_8UnitTests\bin\Debug\xunit.runner.visualstudio.testadapter.dll
 C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task2_8UnitTests\bin\Debug\xunit.runner.reporters.net452.dll
 C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task2_8UnitTests\bin\Debug\xunit.runner.utility.net452.dll
-C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task2_8UnitTests\bin\Debug\xunit.abstractions.dll
 C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task2_8UnitTests\bin\Debug\Task2_8UnitTests.dll
 C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task2_8UnitTests\bin\Debug\Task2_8UnitTests.pdb
 C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task2_8UnitTests\bin\Debug\Task2_8.dll
