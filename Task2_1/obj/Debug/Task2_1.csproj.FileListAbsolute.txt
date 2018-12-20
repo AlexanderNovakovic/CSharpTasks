@@ -4,3 +4,9 @@ C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2.1\obj\Debug\Task2.1.dll
 C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2.1\obj\Debug\Task2.1.pdb
 C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2.1\obj\Debug\Task2_1.csprojAssemblyReference.cache
 C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2.1\obj\Debug\Task2_1.csproj.CoreCompileInputs.cache
+C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2_1\bin\Debug\Task2.1.dll
+C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2_1\bin\Debug\Task2.1.pdb
+C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2_1\obj\Debug\Task2_1.csprojAssemblyReference.cache
+C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2_1\obj\Debug\Task2_1.csproj.CoreCompileInputs.cache
+C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2_1\obj\Debug\Task2.1.dll
+C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2_1\obj\Debug\Task2.1.pdb
