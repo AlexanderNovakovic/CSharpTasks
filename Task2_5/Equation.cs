@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using static System.Math;
 
 namespace Task2_5
 {
@@ -24,6 +26,19 @@ namespace Task2_5
 
             if (xMin >= xMax)
                 throw new ArgumentOutOfRangeException(nameof(xMin));                    
+        }
+
+        public double[] Solve()
+        {
+            List<double> solutions = new List<double>();
+
+            for (double x = XMin; x <= XMax; x += DX)
+            {
+                double y = (Pow(x, 2) - 2 * x - 2) / (Pow(x, 2) + 1);
+                solutions.Add(y);
+            }
+
+            return solutions.ToArray();
         }
     }
 }

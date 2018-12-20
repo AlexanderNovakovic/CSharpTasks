@@ -1,5 +1,5 @@
-﻿using System;
-using Xunit;
+﻿using Xunit;
+using static System.Math;
 using static Task2_8.MathExtensions;
 
 namespace Task2_8UnitTests
@@ -18,6 +18,6 @@ namespace Task2_8UnitTests
         [InlineData(new double[] { 4, 4, 4, 4, 4, 5, 5, 5, 5, 5 }, 0.5)]
         [InlineData(new double[] { 0, 0, 0, 0, 0, 9, 9, 9, 9, 9 }, 4.5)]
         public void StandardDeviationTest(double[] numbers, double expected) =>
-            Assert.Equal(expected, Math.Round(StandardDeviation(numbers, numbers.Length), 1));
+            Assert.Equal(expected, Round(StandardDeviation(numbers, numbers.Length), 1));
     }
 }

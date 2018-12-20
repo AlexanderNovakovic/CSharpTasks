@@ -5,19 +5,21 @@ namespace Task2_6
 {
     public static class MathExtensions
     {
-        public static double CalculateFInalSum(int n)
+        public static double FinalSum(int n)
         {
             Validate(n);
 
             double sum = 0;
 
             for (int i = 1; i <= n; i++)
+            {
                 sum += Pow(-1, i - 1) * SumOfNNumbers(i) / SumOfSqares(i);
+            }
 
             return sum;
         }
 
-        public static double SumOfNFactoralsDevidedByFractions(int n)
+        public static double SumOfNFactorialsDividedByFractions(int n)
         {
             Validate(n);
 
@@ -31,15 +33,15 @@ namespace Task2_6
             return sum;
         }
 
-        public static double SumOfFractions(int i)
+        public static double SumOfFractions(int n)
         {
-            Validate(i);
+            Validate(n);
 
             double sum = 0;
 
-            for (int j = 1; j <= i; j++)
+            for (int i = 1; i <= n; i++)
             {
-                sum += 1.0 / (j + 1);
+                sum += 1.0 / (i + 1);
             }
 
             return sum;
@@ -54,7 +56,7 @@ namespace Task2_6
             for (int i = 1; i <= n; i++)
             {
                 sum += NFactorial(i);
-            }
+            }            
 
             return sum;
         }
@@ -66,7 +68,9 @@ namespace Task2_6
             double sum = 0;
 
             for (int i = 1; i <= n; i++)
+            {
                 sum += i * i;
+            }
 
             return sum;
         }
@@ -78,7 +82,9 @@ namespace Task2_6
             double sum = 0;
 
             for (int i = 1; i <= n; i++)
+            {
                 sum += i;
+            }
 
             return sum;
         }
@@ -90,17 +96,19 @@ namespace Task2_6
             long result = 1;
 
             for (int i = 1; i <= n; i++)
+            {
                 result *= i;
+            }
 
             return result;
         }
 
-
-
         public static void Validate(int n)
         {
             if (n <= 0)
+            {
                 throw new ArgumentOutOfRangeException(nameof(n));
+            }
         }
     }
 }

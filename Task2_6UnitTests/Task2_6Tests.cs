@@ -1,5 +1,5 @@
-﻿using System;
-using Xunit;
+﻿using Xunit;
+using static System.Math;
 using static Task2_6.MathExtensions;
 
 namespace Task2_6UnitTests
@@ -24,11 +24,11 @@ namespace Task2_6UnitTests
         [Theory]
         [InlineData(5, 111.39838)]
         public void SumOfNFactoralsDevidedByFractionsTest(int n, double expected) =>
-            Assert.Equal(expected, Math.Round(SumOfNFactoralsDevidedByFractions(n), 5));
+            Assert.Equal(expected, Round(SumOfNFactorialsDividedByFractions(n), 5));
 
         [Theory]
         [InlineData(5, 0.76797)]
         public void CalculateFInalSumTest(int n, double expected) =>
-            Assert.Equal(expected, Math.Round(CalculateFInalSum(n), 5));
+            Assert.Equal(expected, Round(FinalSum(n), 5));
     }
 }

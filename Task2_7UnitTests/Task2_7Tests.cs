@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Xunit;
-using static Task2_7.MathExtensions;
 using Task2_7;
+using static System.Math;
 
 namespace Task2_7UnitTests
 {
@@ -12,11 +11,11 @@ namespace Task2_7UnitTests
         [MemberData(nameof(SolveTestsParams))]
         public void SumTest(Equation equation, double[] expected, int n)
         {
-            double[] actual = Sum(equation, n);
+            double[] actual = equation.Sum1(n);
             
-            Assert.Equal(Math.Round(expected[1], 3), Math.Round(actual[1], 3));
-            Assert.Equal(Math.Round(expected[8], 3), Math.Round(actual[8], 3));
-            Assert.Equal(Math.Round(expected[5], 3), Math.Round(actual[5], 3));
+            Assert.Equal(Round(expected[1], 3), Round(actual[1], 3));
+            Assert.Equal(Round(expected[8], 3), Round(actual[8], 3));
+            Assert.Equal(Round(expected[5], 3), Round(actual[5], 3));
         }
 
         public static IEnumerable<object[]> SolveTestsParams()
@@ -44,11 +43,11 @@ namespace Task2_7UnitTests
         [MemberData(nameof(SolveTestsParamsTwo))]
         public void SumTwoTest(Equation equation, double[] expected, int n)
         {
-            double[] actual = SumTwo(equation, n);
+            double[] actual = equation.Sum2(n);
 
-            Assert.Equal(Math.Round(expected[1], 3), Math.Round(actual[1], 3));
-            Assert.Equal(Math.Round(expected[8], 3), Math.Round(actual[8], 3));
-            Assert.Equal(Math.Round(expected[5], 3), Math.Round(actual[5], 3));
+            Assert.Equal(Round(expected[1], 3), Round(actual[1], 3));
+            Assert.Equal(Round(expected[8], 3), Round(actual[8], 3));
+            Assert.Equal(Round(expected[5], 3), Round(actual[5], 3));
         }
 
         public static IEnumerable<object[]> SolveTestsParamsTwo()
