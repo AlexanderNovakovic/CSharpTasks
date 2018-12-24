@@ -1,0 +1,6 @@
+C:\Users\StorM\Documents\GitHub\CSharpTasks\Task3_4\bin\Debug\Task3_4.dll
+C:\Users\StorM\Documents\GitHub\CSharpTasks\Task3_4\bin\Debug\Task3_4.pdb
+C:\Users\StorM\Documents\GitHub\CSharpTasks\Task3_4\obj\Debug\Task3_4.csproj.CoreCompileInputs.cache
+C:\Users\StorM\Documents\GitHub\CSharpTasks\Task3_4\obj\Debug\Task3_4.dll
+C:\Users\StorM\Documents\GitHub\CSharpTasks\Task3_4\obj\Debug\Task3_4.pdb
+C:\Users\StorM\Documents\GitHub\CSharpTasks\Task3_4\obj\Debug\Task3_4.csprojAssemblyReference.cache
