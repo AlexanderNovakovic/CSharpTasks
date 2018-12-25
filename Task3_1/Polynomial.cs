@@ -32,18 +32,13 @@ namespace Task3_1
             }
         }
 
-        public double[] Solve(double[] coefficients, int n)
+        public double[] Solve(double[] coefficients)
         {
-            if (coefficients.Length != n + 1)
-            {
-                throw new ArgumentOutOfRangeException(nameof(coefficients));
-            }
-
             List<double> result = new List<double>();
 
             for (double x = XMin; x <= XMax; x += DX)
             {
-                result.Add(Sum(coefficients, x, n));
+                result.Add(Sum(coefficients, x));
             }
 
             return result.ToArray();

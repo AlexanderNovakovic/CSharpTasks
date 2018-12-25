@@ -25,34 +25,22 @@ namespace Task3_6
             {
                 if (first[indexOfFirst] <= second[indexOfSecond])
                 {
-                    third[indexOfThird] = first[indexOfFirst];
-
-                    indexOfThird++;
-                    indexOfFirst++;
+                    third[indexOfThird++] = first[indexOfFirst++];
                 }
                 else
                 {
-                    third[indexOfThird] = second[indexOfSecond];
-
-                    indexOfThird++;
-                    indexOfSecond++;
+                    third[indexOfThird++] = second[indexOfSecond++];
                 }
             }
 
             while (indexOfFirst < first.Length)
             {
-                third[indexOfThird] = first[indexOfFirst];
-
-                indexOfThird++;
-                indexOfFirst++;
+                third[indexOfThird++] = first[indexOfFirst++];
             }
 
             while (indexOfSecond < second.Length)
             {
-                third[indexOfThird] = second[indexOfSecond];
-
-                indexOfThird++;
-                indexOfSecond++;
+                third[indexOfThird++] = second[indexOfSecond++];                
             }
 
             return third;

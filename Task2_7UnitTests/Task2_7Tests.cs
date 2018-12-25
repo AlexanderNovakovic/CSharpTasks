@@ -12,10 +12,13 @@ namespace Task2_7UnitTests
         public void SumTest(Equation equation, double[] expected, int n)
         {
             double[] actual = equation.Sum1(n);
-            
-            Assert.Equal(Round(expected[1], 3), Round(actual[1], 3));
-            Assert.Equal(Round(expected[8], 3), Round(actual[8], 3));
-            Assert.Equal(Round(expected[5], 3), Round(actual[5], 3));
+
+            Assert.Equal(expected.Length, actual.Length);
+
+            for (int i = 0; i < expected.Length; i++)
+            {
+                Assert.Equal(Round(expected[i], 3), Round(actual[i], 3));
+            }            
         }
 
         public static IEnumerable<object[]> SolveTestsParams()
@@ -45,9 +48,12 @@ namespace Task2_7UnitTests
         {
             double[] actual = equation.Sum2(n);
 
-            Assert.Equal(Round(expected[1], 3), Round(actual[1], 3));
-            Assert.Equal(Round(expected[8], 3), Round(actual[8], 3));
-            Assert.Equal(Round(expected[5], 3), Round(actual[5], 3));
+            Assert.Equal(expected.Length, actual.Length);
+
+            for (int i = 0; i < expected.Length; i++)
+            {
+                Assert.Equal(Round(expected[i], 3), Round(actual[i], 3));
+            }
         }
 
         public static IEnumerable<object[]> SolveTestsParamsTwo()

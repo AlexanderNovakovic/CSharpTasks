@@ -12,10 +12,11 @@ namespace Task3_6.UnitTests
             int[] actual = MergeTwoArraysAscending(first, second);
 
             Assert.Equal(expected.Length, actual.Length);
-            Assert.Equal(expected[0], actual[0]);
-            Assert.Equal(expected[10], actual[10]);
-            Assert.Equal(expected[3], actual[3]);
-            Assert.Equal(expected[8], actual[8]);
+
+            for (int i = 0; i < expected.Length; i++)
+            {
+                Assert.Equal(expected[i], actual[i]);
+            }
         }
     }
 }

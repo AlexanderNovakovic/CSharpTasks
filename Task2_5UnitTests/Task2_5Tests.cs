@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Xunit;
 using Task2_5;
-using System;
+using static System.Math;
 
 namespace Task2_5UnitTests
 {
@@ -12,12 +12,13 @@ namespace Task2_5UnitTests
         public void SolveEquationTest(Equation equation, double[] expected)
         {
             double[] actual = equation.Solve();
-
-            // Assert.Equal(expected, actual);
+           
             Assert.Equal(expected.Length, actual.Length);
-            Assert.Equal(Math.Round(expected[1], 5), Math.Round(actual[1], 5));
-            Assert.Equal(Math.Round(expected[10], 5), Math.Round(actual[10], 5));
-            Assert.Equal(Math.Round(expected[5], 5), Math.Round(actual[5], 5));
+            
+            for (int i = 0; i < expected.Length; i++)
+            {
+                Assert.Equal(Round(expected[i], 5), Round(actual[i], 5));
+            }
         }
 
         public static IEnumerable<object[]> SolveTestsParams()

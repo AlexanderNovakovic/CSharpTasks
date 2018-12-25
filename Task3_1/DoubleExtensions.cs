@@ -1,16 +1,10 @@
-﻿using System;
-
-namespace Task3_1
+﻿namespace Task3_1
 {
     public static class DoubleExtensions
     {
-        public static double Sum(double[] numbers, double x, int n)
+        public static double Sum(double[] numbers, double x)
         {
-            if (n <= 0)
-            {
-                throw new ArgumentOutOfRangeException(nameof(n));
-            }
-
+            int n = numbers.Length - 1;
             double p = numbers[n];
 
             for (int i = n - 1; i >= 0; i--)

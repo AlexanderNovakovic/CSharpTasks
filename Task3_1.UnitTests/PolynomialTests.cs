@@ -8,14 +8,16 @@ namespace Task3_1.UnitTests
     {
         [Theory]
         [MemberData(nameof(SolveTestsParams))]
-        public static void PolynomialSolveTests(Polynomial polynomial, double[] coefficients, int n, double[] expected)
+        public static void PolynomialSolveTests(Polynomial polynomial, double[] coefficients, double[] expected)
         {
-            double[] actual = polynomial.Solve(coefficients, n);
+            double[] actual = polynomial.Solve(coefficients);
 
             Assert.Equal(expected.Length, actual.Length);
-            Assert.Equal(Round(expected[1], 3), Round(actual[1], 3));
-            Assert.Equal(Round(expected[5], 3), Round(actual[5], 3));
-            Assert.Equal(Round(expected[10], 3), Round(actual[10], 3));
+
+            for (int i = 0; i < expected.Length; i++)
+            {
+                Assert.Equal(Round(expected[i], 3), Round(actual[i], 3));
+            }
         }
 
         public static IEnumerable<object[]> SolveTestsParams()
@@ -29,8 +31,7 @@ namespace Task3_1.UnitTests
                     3,
                     -2,
                     1
-                },
-                3,
+                },                
                 new double[]
                 {
                     -104.000,
