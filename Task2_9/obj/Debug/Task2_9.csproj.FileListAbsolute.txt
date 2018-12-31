@@ -1,6 +1,0 @@
-C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2_9\bin\Debug\Task2_9.dll
-C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2_9\bin\Debug\Task2_9.pdb
-C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2_9\obj\Debug\Task2_9.csproj.CoreCompileInputs.cache
-C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2_9\obj\Debug\Task2_9.dll
-C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2_9\obj\Debug\Task2_9.pdb
-C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2_9\obj\Debug\Task2_9.csprojAssemblyReference.cache
