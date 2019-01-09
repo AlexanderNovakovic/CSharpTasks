@@ -2,7 +2,7 @@
 {
     public class Set
     {
-        public double[] Arr { get; set; }
+        public double[] Arr { get; }
 
         public Set()
         {

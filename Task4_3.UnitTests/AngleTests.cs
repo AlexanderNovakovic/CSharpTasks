@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using Xunit;
-using static Task4_3.Angle;
 using static System.Math;
 
 namespace Task4_3.UnitTests
