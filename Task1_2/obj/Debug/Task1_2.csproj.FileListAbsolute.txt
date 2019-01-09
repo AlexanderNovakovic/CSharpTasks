@@ -4,3 +4,9 @@ C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2\obj\Debug\Task1_2.csprojAssemb
 C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2\obj\Debug\Task1_2.csproj.CoreCompileInputs.cache
 C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2\obj\Debug\Task2.dll
 C:\Users\StorM\Documents\GitHub\CSharpTasks\Task2\obj\Debug\Task2.pdb
+C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task1_2\bin\Debug\Task2.dll
+C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task1_2\bin\Debug\Task2.pdb
+C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task1_2\obj\Debug\Task1_2.csprojAssemblyReference.cache
+C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task1_2\obj\Debug\Task1_2.csproj.CoreCompileInputs.cache
+C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task1_2\obj\Debug\Task2.dll
+C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task1_2\obj\Debug\Task2.pdb

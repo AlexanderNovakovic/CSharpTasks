@@ -40,7 +40,7 @@ namespace Task4_8
             return number;
         }
 
-        public void EmptyStack()
+        public void Clear()
         {
             First = null;
             Last = null;

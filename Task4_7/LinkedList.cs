@@ -1,27 +1,27 @@
 ﻿namespace Task4_7
 {
-    public class ListOfElements
+    public class LinkedList
     {
-        public Element First { get; set; }
+        public Element Head { get; set; }
 
-        public ListOfElements()
+        public LinkedList()
         {
 
         }
 
-        public ListOfElements(int number)
+        public LinkedList(int number)
         {
-            First = new Element(number); 
+            Head = new Element(number); 
         }
 
-        public void EmptyList() => 
-            First = null;
+        public void Clear() => 
+            Head = null;
 
-        public int Size()
+        public int Count()
         {
             int n = 0;
 
-            for (Element element = First; element != null; element = element.Next)
+            for (Element element = Head; element != null; element = element.Next)
             {
                 n++;
             }
@@ -30,19 +30,19 @@
         }
 
         public void AddFirst(int number) => 
-            First = new Element(number, First);
+            Head = new Element(number, Head);
 
         public void AddLast(int number)
         {
             Element element = new Element(number);
 
-            if (First == null)
+            if (Head == null)
             {
-                First = element;
+                Head = element;
             }
             else
             {
-                Element temp = First;
+                Element temp = Head;
 
                 while (temp.Next != null)
                 {
@@ -55,7 +55,7 @@
 
         public void Insert(int number)
         {
-            Element temp = First;
+            Element temp = Head;
             Element previous = null;
 
             while (temp != null && temp.Number < number)
@@ -68,7 +68,7 @@
 
             if (previous == null)
             {
-                First = element;
+                Head = element;
             }
             else
             {
@@ -78,7 +78,7 @@
 
         public void Remove(int number)
         {
-            Element temp = First;
+            Element temp = Head;
             Element previous = null;
 
             while (temp != null)
@@ -93,7 +93,7 @@
                     temp = temp.Next;
                     if (previous == null)
                     {
-                        First = temp;
+                        Head = temp;
                     }
                     else
                     {

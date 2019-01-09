@@ -4,51 +4,25 @@ namespace Task4_4.UnitTests
 {
     public class StackTests
     {
-        [Theory]
-        [InlineData(new int[] { 0, 1, 2, 3, 4}, 0)]        
-        public void StackPeekTests(int[] numbers, int expected)
+        [Fact]       
+        public void StackTest()
         {
-            Stack s = InitializeStack(numbers);
-
-            int actual = s.Peek();
-            
-            Assert.Equal(expected, actual);
-        }
-
-        [Theory]
-        [InlineData(new int[] { 0, 1, 2, 3, 4 }, 5)]
-        public void StackSizeTests(int[] numbers, int expected)
-        {
-            Stack s = InitializeStack(numbers);
-
-            int actual = s.NumberOfElements();
-
-            Assert.Equal(expected, actual);
-        }
-
-        [Theory]
-        [InlineData(new int[] { 0, 1, 2, 3, 4 }, 1)]
-        public void StackPopTests(int[] numbers, int expected)
-        {
-            Stack s = InitializeStack(numbers);
-
-            s.Pop();
-
-            int actual = s.Peek();
-
-            Assert.Equal(expected, actual);
-        }
-
-        public static Stack InitializeStack(int[] numbers)
-        {
-            Stack s = new Stack();
-
-            for (int i = numbers.Length - 1; i >= 0; i--)
+            Stack stack = new Stack();
+            for (int i = 0; i < 5; i++)
             {
-                s.Push(i);
+                stack.Push(i);
+                Assert.Equal(i, stack.Peek());
+            }
+            
+            Assert.Equal(5, stack.Count);
+
+            for (int i = 4; i >= 0; i--)
+            {
+                Assert.Equal(i, stack.Peek());
+                Assert.Equal(i, stack.Pop());
             }
 
-            return s;
+            Assert.Equal(0, stack.Count);
         }
     }
 }

@@ -9,15 +9,15 @@ namespace Task4_7.UnitTests
         [MemberData(nameof(AddFirstTestParams))]
         public void AddFirstTests(int number, int[] numbers, int expected)
         {
-            ListOfElements list = new ListOfElements(number);
+            LinkedList list = new LinkedList(number);
 
             foreach (int n in numbers)
             {
                 list.AddFirst(n);
             }
 
-            Assert.Equal(expected, list.First.Number);
-            Assert.Equal(numbers[numbers.Length - 2], list.First.Next.Number);            
+            Assert.Equal(expected, list.Head.Number);
+            Assert.Equal(numbers[numbers.Length - 2], list.Head.Next.Number);            
         }
 
         public static IEnumerable<object[]> AddFirstTestParams()
@@ -41,15 +41,15 @@ namespace Task4_7.UnitTests
         [MemberData(nameof(AddLastTestParams))]
         public void AddLastTests(int number, int[] numbers, int expected)
         {
-            ListOfElements list = new ListOfElements(number);
+            LinkedList list = new LinkedList(number);
 
             foreach (int n in numbers)
             {
                 list.AddLast(n);
             }
 
-            Assert.Equal(expected, list.First.Number);
-            Assert.Equal(numbers[0], list.First.Next.Number);
+            Assert.Equal(expected, list.Head.Number);
+            Assert.Equal(numbers[0], list.Head.Next.Number);
         }
 
         public static IEnumerable<object[]> AddLastTestParams()
@@ -73,7 +73,7 @@ namespace Task4_7.UnitTests
         [MemberData(nameof(InsertTestParams))]
         public void InsertTests(int number, int[] numbers, int expected)
         {
-            ListOfElements list = new ListOfElements();
+            LinkedList list = new LinkedList();
 
             foreach (int n in numbers)
             {
@@ -82,8 +82,8 @@ namespace Task4_7.UnitTests
 
             list.Insert(number);
 
-            Assert.Equal(expected, list.First.Next.Next.Next.Number);
-            Assert.Equal(expected, list.First.Next.Next.Number);
+            Assert.Equal(expected, list.Head.Next.Next.Next.Number);
+            Assert.Equal(expected, list.Head.Next.Next.Number);
         }
 
         public static IEnumerable<object[]> InsertTestParams()

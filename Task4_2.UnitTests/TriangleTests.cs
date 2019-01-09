@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using Xunit;
-using static Task4_2.TriangleExtensions;
 using static System.Math;
 
 namespace Task4_2.UnitTests
@@ -11,11 +10,15 @@ namespace Task4_2.UnitTests
         [MemberData(nameof(SurfaceTestsParams))]
         public void TriangleSurfaceTests(Triangle[] triangles, double[] expected)
         {
-            double[] actual = CalculateSurfaces(triangles);
+            double[] actual = triangles.SortedAreas();
+            for (int i = 0; i < triangles.Length; i++)
+            {
+                actual[i] = Round(actual[i], 5);
+            }
 
             for (int i = 0; i < triangles.Length; i++)
             {                
-                Assert.Equal(Round(expected[i], 5), Round(actual[i], 5));
+                Assert.Equal(expected[i], actual[i]);
             }
         }
 
@@ -27,7 +30,6 @@ namespace Task4_2.UnitTests
                     new Triangle(1, 1, 1),
                     new Triangle(3, 4, 5),
                     new Triangle(1, 2, 2),
-                    new Triangle(1, 3, 5),
                     new Triangle(2, 3, 4),
                     new Triangle(5, 6, 7)
                 },
@@ -36,7 +38,6 @@ namespace Task4_2.UnitTests
                     0.43301,
                     0.96825,
                     2.90474,
-                    double.NaN,
                     6,                     
                     14.69694
                 }

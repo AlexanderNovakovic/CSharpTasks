@@ -9,26 +9,25 @@ namespace Task4_3.UnitTests
     {
         [Fact]
         public void ConvertToRadiansTests() => 
-            Assert.Equal(0.785398, Round(ConvertToRadians(45, 0, 0), 6));
+            Assert.Equal(0.785398, Round(new Angle(45, 0, 0), 6));
 
         [Theory]
         [InlineData(2, 0, 0)]
         [InlineData(2, 1, 2)]
         [InlineData(2, -6, -12)]
-        public void MultiplyWithTests(double radians, double number, double expected)
+        public void MultiplyWithTests(double radians, double factor, double expected)
         {
-            Angle angle = new Angle(radians);
-
-            Assert.Equal(expected, angle.MultiplyWith(number));
+            Angle actual = new Angle(radians) * factor;
+            Assert.Equal(expected, actual);
         }
 
         [Theory]
         [MemberData(nameof(SumWithTestsParams))]
-        public void SumWithTests(double radians, Angle secondAngle, double expected)
+        public void SumWithTests(Angle first, Angle second, double expected)
         {
-            Angle angle = new Angle(radians);
+            Angle actual = first + second;
 
-            Assert.Equal(expected, angle.SumWith(secondAngle));
+            Assert.Equal(expected, actual);
         }
 
 
@@ -36,14 +35,14 @@ namespace Task4_3.UnitTests
         {
             yield return new object[]
             {
-                2,
+                new Angle(2),
                 new Angle(3),
                 5
             };
 
             yield return new object[]
             {
-                2.436,
+                new Angle(2.436),
                 new Angle(3.529),
                 5.965
             };

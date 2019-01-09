@@ -7,32 +7,31 @@ namespace Task4_1.UnitTests
     {
         [Theory]
         [MemberData(nameof(DistanceTestsParams))]
-        public static void DistanceTests(double x, double y, Point point, double expected)
+        public static void DistanceTests(Point p1, Point p2, double expectedDistance)
         {
-            Point p = new Point(x, y);
+            double actual = p1.Distance(p2);
 
-            double actual = p.Distance(point);
-
-            Assert.Equal(expected, actual);
+            Assert.Equal(expectedDistance, actual);
         }
 
         public static IEnumerable<object[]> DistanceTestsParams()
         {
             yield return new object[]
             {
-                1,
-                1,
+                new Point(1, 1), 
                 new Point(4, 5),
-                5
+                ExpectedDistance(5)
             };
 
             yield return new object[]
             {
-               0,
-               0,
                new Point(0, 0),
-               0
+               new Point(0, 0),
+               ExpectedDistance(0)
             };
         }
+
+        private static int ExpectedDistance(int distance) =>
+            distance;
     }
 }

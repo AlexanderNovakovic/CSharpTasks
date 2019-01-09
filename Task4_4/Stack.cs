@@ -1,31 +1,34 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Task4_4
 {
     public class Stack
     {
-        public List<int> List { get; set; }
+        private List<int> Values { get; }
+        public int Count => Values.Count;
 
-        public Stack()
+        public Stack() => 
+            Values = new List<int>(10);
+        
+        public void Push(int value) => 
+            Values.Add(value);
+
+        public int Pop()
         {
-            List = new List<int>(10);
+            int value = Peek();
+
+            Values.RemoveAt(Values.Count - 1);
+
+            return value;
         }
 
-        public Stack(int peek)
+        public int Peek()
         {
-            List = new List<int>(peek);
+            if (Count == 0)
+                throw new InvalidOperationException();
+
+            return Values[Values.Count - 1];
         }
-
-        public void Push(int number) => 
-            List.Insert(0, number);
-
-        public void Pop() => 
-            List.RemoveAt(0);
-
-        public int NumberOfElements() => 
-            List.Count;
-
-        public int Peek() => 
-            List[0];
     }
 }

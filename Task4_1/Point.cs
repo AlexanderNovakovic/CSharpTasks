@@ -4,8 +4,9 @@ namespace Task4_1
 {
     public class Point
     {
-        public double X { get; set; }
-        public double Y { get; set; }
+        public double X { get; }
+
+        public double Y { get; }
 
         public Point(double x, double y)
         {
@@ -13,7 +14,7 @@ namespace Task4_1
             Y = y;
         }
 
-        public double Distance(Point p) =>
-            Sqrt(Pow(X - p.X, 2) + Pow(Y - p.Y, 2));
+        public double Distance(Point other) =>
+            Sqrt(Pow(X - other.X, 2) + Pow(Y - other.Y, 2));
     }
 }
