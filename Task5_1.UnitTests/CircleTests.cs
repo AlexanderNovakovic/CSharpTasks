@@ -29,32 +29,35 @@ namespace Task5_1.UnitTests
 
         [Theory]
         [MemberData(nameof(MoveTestTwoParams))]
-        public void MoveTestTwo(Circle circle, double x, double y, Circle expected) =>
-            Assert.Equal(expected, circle.Move(x, y));
+        public void MoveTestTwo(Circle circle, double dx, double dy, Circle expected) =>
+            Assert.Equal(expected, circle.Move(dx, dy));
         
         public static IEnumerable<object[]> MoveTestTwoParams()
         {
             yield return new object[]
             {
                 new Circle(new Point(0, 0), 2),
-                1,
-                2,
+                Dx(1),
+                Dy(2),
                 new Circle(new Point(1, 2), 2),
             };
 
             yield return new object[]
             {
                 new Circle(new Point(0, 0), 2),
-                0,
-                0,
+                Dx(0),
+                Dy(0),
                 new Circle(new Point(0, 0), 2),
             };
         }
 
+        public static int Dx(int dx) => dx;
+        public static int Dy(int dy) => dy;
+
         [Theory]
         [MemberData(nameof(OverlappingTestParams))]
-        public void OverlappingTest(Circle circle, Circle other, bool expected) =>
-            Assert.Equal(expected, circle.IsOverlapping(other));        
+        public void OverlappingTest(Circle circle, Circle other, bool expectedIsOverlapping) =>
+            Assert.Equal(expectedIsOverlapping, circle.IsOverlapping(other));        
 
         public static IEnumerable<object[]> OverlappingTestParams()
         {
@@ -62,22 +65,24 @@ namespace Task5_1.UnitTests
             {
                 new Circle(new Point(0, 0), 1),
                 new Circle(new Point(2, 2), 1),
-                false
+                AreOverlapping(false)
             };
 
             yield return new object[]
             {
                 new Circle(new Point(0, 0), 2),
                 new Circle(new Point(0, 0), 3),
-                true
+                AreOverlapping(true)
             };
 
             yield return new object[]
             {
                 new Circle(new Point(0, 0), 0.5),
                 new Circle(new Point(0, 1), 0.5),
-                false
+                AreOverlapping(false)
             };
         }
+
+        public static bool AreOverlapping(bool areOverlapping) => areOverlapping;
     }
 }

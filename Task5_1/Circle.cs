@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Task5_1
 {
@@ -21,8 +22,8 @@ namespace Task5_1
         public bool IsOverlapping(Circle other) =>
             Center.Distance(other.Center) < R + other.R;
 
-        public Circle Move(double x, double y) => 
-            new Circle(new Point(x, y), R);
+        public Circle Move(double dx, double dy) => 
+            new Circle(Center.Move(dx, dy), R);
 
         public Circle Move(Point point) => 
             new Circle(point, R);

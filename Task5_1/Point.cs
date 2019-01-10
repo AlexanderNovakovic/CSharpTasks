@@ -25,6 +25,9 @@ namespace Task5_1
         public double Distance(Point point) => 
             Sqrt(Pow(X - point.X, 2) + Pow(Y - point.Y, 2));
 
+        public Point Move(double dx, double dy) =>
+            new Point(X + dx, Y + dy);
+
         public static bool operator ==(Point left, Point right) =>
             !(left is null ^ right is null) && (left is null || left.Equals(right));
 
