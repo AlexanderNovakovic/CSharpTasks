@@ -1,20 +1,21 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Task5_2
 {
-    public class Word : IEquatable<Word>
+    public class Word : IEquatable<Word>, IComparer<Word>, IComparable<Word>
     {
         public string Term { get; }
         public string Translation { get; }
 
         public Word(string term, string translation)
         {
-            if (string.IsNullOrWhiteSpace(term))
+            if (string.IsNullOrEmpty(term?.Trim()))
             {
                 throw new ArgumentException(nameof(term));
             }
 
-            if (string.IsNullOrWhiteSpace(translation))
+            if (string.IsNullOrEmpty(translation?.Trim()))
             {
                 throw new ArgumentException(nameof(translation));
             }
@@ -29,22 +30,6 @@ namespace Task5_2
         public static bool operator !=(Word left, Word right) =>
             !(left == right);
 
-        public static bool operator <=(Word left, Word right) =>
-            !(left > right);
-
-        public static bool operator >=(Word left, Word right) =>
-            !(left < right);
-
-        public static bool operator <(Word left, Word right) =>        
-            left.Term.CompareTo(right.Term) < 0 
-                || left.Term.CompareTo(right.Term) == 0 
-                && left.Translation.CompareTo(right.Translation) < 0;
-        
-        public static bool operator >(Word left, Word right) =>
-            left.Term.CompareTo(right.Term) > 0 
-                || left.Term.CompareTo(right.Term) == 0 
-                && left.Translation.CompareTo(right.Translation) > 0;
-
         public bool Equals(Word other)
         {
             if (other is null)
@@ -58,7 +43,47 @@ namespace Task5_2
             }
 
             return Term == other.Term
-                   && Translation == other.Translation;
+                && Translation == other.Translation;
+        }
+
+        public int Compare(Word left, Word right)
+        {
+            if (left == null && right == null)
+            {
+                return 0;
+            }
+
+            if (left == null)
+            {
+                return -1;
+            }
+
+            if (right == null)
+            {
+                return 1;
+            }
+
+            if (left.Equals(right))
+            {
+                return 0;
+            }
+
+            if (string.Compare(left.Term, right.Term, StringComparison.Ordinal) < 0)
+            {
+                return -1;
+            }
+
+            if (string.Compare(left.Term, right.Term, StringComparison.Ordinal) == 0)
+            {
+                return string.Compare(left.Translation, right.Translation, StringComparison.Ordinal);
+            }
+
+            return 1;
+        }
+
+        public int CompareTo(Word other)
+        {
+            return Compare(this, other);
         }
 
         public override bool Equals(object obj) =>

@@ -1,27 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Task5_2
 {
-    public class Dictionary : IComparer<Word>
+    public class Dictionary
     {
         public List<Word> Words { get; }
 
         public Dictionary() =>
             Words = new List<Word>();
 
+        public Dictionary(IEnumerable<Word> words)
+        {
+            Words = words?.ToList() ?? throw new ArgumentNullException(nameof(words));
+            Words.Sort();
+        }
+
         public void Add(Word word)
         {
-            if (word is null)
+            if (word == null)
             {
                 throw new ArgumentNullException(nameof(word));
             }
 
             Words.Add(word);
 
-            IComparer<Word> comparer = new Dictionary();
-
-            Words.Sort(comparer);
+            Words.Sort();
         }
 
         public List<string> Translate(string term)
@@ -37,22 +42,6 @@ namespace Task5_2
             }
 
             return translations;
-        }
-
-        public int Compare(Word left, Word right)
-        {
-            if (left.Term.CompareTo(right.Term) != 0)
-            {
-                return left.Term.CompareTo(right.Term);
-            }
-            else if (left.Translation.CompareTo(right.Translation) != 0)
-            {
-                return left.Translation.CompareTo(right.Translation);
-            }
-            else
-            {
-                return 0;
-            }
         }
     }
 }

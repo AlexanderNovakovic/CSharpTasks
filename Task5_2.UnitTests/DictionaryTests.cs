@@ -7,15 +7,8 @@ namespace Task5_2.UnitTests
     {
         [Theory]
         [MemberData(nameof(AddTestsParams))]
-        public void AddTests(List<Word> words, List<Word> expecetedWords)
+        public void AddTests(Dictionary dictionary, List<Word> expecetedWords)
         {
-            Dictionary dictionary = new Dictionary();
-
-            foreach (Word word in words)
-            {
-                dictionary.Add(word);
-            }
-
             for (int i = 0; i < expecetedWords.Count; i++)
             {
                 Assert.Equal(expecetedWords[i], dictionary.Words[i]);
@@ -26,7 +19,7 @@ namespace Task5_2.UnitTests
         {
             yield return new object[]
             {
-                new List<Word>()
+                new Dictionary(new List<Word>
                 {
                     new Word("glas", "voice"),
                     new Word("glas", "voice"),
@@ -37,8 +30,8 @@ namespace Task5_2.UnitTests
                     new Word("glas", "sound"),
                     new Word("glas", "vote"),
                     new Word("jezik", "language")
-                },
-                new List<Word>()
+                }),
+                new List<Word>
                 {
                     new Word("dobar", "good"),
                     new Word("dobar", "kind"),
