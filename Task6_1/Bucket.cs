@@ -4,49 +4,49 @@ namespace Task6_1
 {
     public class Bucket : Cylinder
     {
-        public double Fillness { get; private set; }
+        public double Fullness { get; private set; }
         public double RemainingCapacity { get; }
 
-        public Bucket(double radius, double height, double fillness) : base(radius, height)
+        public Bucket(double radius, double height, double fullness) : base(radius, height)
         {
-            if (fillness < 0)
+            if (fullness < 0)
             {
-                throw new ArgumentOutOfRangeException(nameof(fillness));
+                throw new ArgumentOutOfRangeException(nameof(fullness));
             }
 
-            double remainingCapacity = fillness <= Volume ? Volume - fillness : 0;
+            double remainingCapacity = fullness <= Volume ? Volume - fullness : 0;
 
-            Fillness = fillness <= Volume ? fillness : Volume;
+            Fullness = fullness <= Volume ? fullness : Volume;
             RemainingCapacity = remainingCapacity;
         }
 
         public bool IsFull() =>
-            Fillness == Volume;
+            Fullness == Volume;
 
         public bool IsEmpty() =>
-            Fillness == 0;
+            Fullness == 0;
 
         public void PourIn(double quantity)
         {
-            if (Fillness + quantity <= Volume)
+            if (Fullness + quantity <= Volume)
             {
-                 Fillness += quantity;
+                 Fullness += quantity;
             }
             else
             {
-                Fillness = Volume;
+                Fullness = Volume;
             }
         }
 
         public void PourOut(double quantity)
         {
-            if (Fillness - quantity >= 0)
+            if (Fullness - quantity >= 0)
             {
-                Fillness -= quantity;                
+                Fullness -= quantity;                
             }
             else
             {
-                Fillness = 0;
+                Fullness = 0;
             }
         }
 
@@ -57,15 +57,15 @@ namespace Task6_1
                 throw new ArgumentNullException(nameof(other));
             }
 
-            if (RemainingCapacity >= other.Fillness)
+            if (RemainingCapacity >= other.Fullness)
             {
-                Fillness += other.Fillness;
-                other.Fillness = 0;
+                Fullness += other.Fullness;
+                other.Fullness = 0;
             }
             else
             {
-                Fillness = Volume;
-                other.Fillness -= RemainingCapacity;
+                Fullness = Volume;
+                other.Fullness -= RemainingCapacity;
             }
         }
     }

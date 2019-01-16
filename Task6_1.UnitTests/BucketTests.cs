@@ -8,11 +8,11 @@ namespace Task6_1.UnitTests
     {
         [Theory]
         [MemberData(nameof(PourInTestParams))]
-        public void PourInTests(Bucket bucket, double quantity, double expectedFillness)
+        public void PourInTests(Bucket bucket, double quantity, double expectedFullness)
         {
             bucket.PourIn(quantity);
             
-            Assert.Equal(expectedFillness, bucket.Fillness);
+            Assert.Equal(expectedFullness, bucket.Fullness);
         }
 
         public static IEnumerable<object[]> PourInTestParams()
@@ -21,17 +21,17 @@ namespace Task6_1.UnitTests
             {
                 new Bucket(1, 3, 4.42477796076938),
                 Quantity(4),
-                ExpectedFillness(8.42477796076938)
+                ExpectedFullness(8.42477796076938)
             };
         }
 
         [Theory]
         [MemberData(nameof(PourOutTestParams))]
-        public void PourOutTests(Bucket bucket, double quantity, double expectedFillness)
+        public void PourOutTests(Bucket bucket, double quantity, double expectedFullness)
         {
             bucket.PourOut(quantity);
 
-            Assert.Equal(expectedFillness, Round(bucket.Fillness, 5));
+            Assert.Equal(expectedFullness, Round(bucket.Fullness, 5));
         }
 
         public static IEnumerable<object[]> PourOutTestParams()
@@ -40,18 +40,18 @@ namespace Task6_1.UnitTests
             {
                 new Bucket(1, 3, 10),
                 Quantity(5),
-                ExpectedFillness(4.42478)
+                ExpectedFullness(4.42478)
             };
         }
 
         [Theory]
         [MemberData(nameof(PourFromTestParams))]
-        public void PourFromTests(Bucket first, Bucket second, double expectedFillnessFirst, double expectedFillnessSecond)
+        public void PourFromTests(Bucket first, Bucket second, double expectedFullnessFirst, double expectedFullnessSecond)
         {
             second.PourFrom(first);
 
-            Assert.Equal(expectedFillnessFirst, Round(first.Fillness, 5));
-            Assert.Equal(expectedFillnessSecond, Round(second.Fillness, 5));
+            Assert.Equal(expectedFullnessFirst, Round(first.Fullness, 5));
+            Assert.Equal(expectedFullnessSecond, Round(second.Fullness, 5));
         }
 
         public static IEnumerable<object[]> PourFromTestParams()
@@ -60,14 +60,14 @@ namespace Task6_1.UnitTests
             {
                 new Bucket(1, 3, 10),
                 new Bucket(0.6, 5, 0),
-                ExpectedFillnessFirst(3.76991),
-                ExpectedFillnessSecond(5.65487)
+                ExpectedFullnessFirst(3.76991),
+                ExpectedFullnessSecond(5.65487)
             };
         }
 
         public static double Quantity(double quantity) => quantity;
-        public static double ExpectedFillness(double expectedFillness) => expectedFillness;
-        public static double ExpectedFillnessFirst(double fillnessFirst) => fillnessFirst;
-        public static double ExpectedFillnessSecond(double fillnessSecond) => fillnessSecond;
+        public static double ExpectedFullness(double expectedFullness) => expectedFullness;
+        public static double ExpectedFullnessFirst(double fullnessFirst) => fullnessFirst;
+        public static double ExpectedFullnessSecond(double fullnessSecond) => fullnessSecond;
     }
 }
