@@ -1,31 +1,25 @@
-﻿using System;
-
-namespace Task6_3
+﻿namespace Task6_3
 {
     public class Vehicle
     {
-        public double Weight { get; private set; }
-        public double MaxWeight { get; set; }
+        private VehicleWeightTracker VehicleWeightTracker { get; }
+        private PassengerTracker PassengerTracker { get; }
 
-        public Vehicle(double weight, double maxWeight)
+        public double TotalWeight => VehicleWeightTracker.TotalWeight;
+
+        public Vehicle(double vehicleWeight, double maxWeight, int passengersCapacity)
         {
-            if (weight > maxWeight)
-            {
-                throw new ArgumentException();
-            }
-
-            Weight = weight;
-            MaxWeight = maxWeight;
+            VehicleWeightTracker = new VehicleWeightTracker(vehicleWeight, maxWeight);
+            PassengerTracker = new PassengerTracker(passengersCapacity);
         }
 
-        public virtual void AddWeight(double additionalWeight)
+        public void AddPassenger(double passengerWeight)
         {
-            if (additionalWeight < 0 || Weight + additionalWeight > MaxWeight)
-            {
-                throw new ArgumentException();
-            }
-
-            Weight += additionalWeight;
+            VehicleWeightTracker.AddWeight(passengerWeight);
+            PassengerTracker.AddPassenger();
         }
+
+        public void AddLoad(double load) =>
+            VehicleWeightTracker.AddWeight(load);
     }
 }
