@@ -1,54 +1,30 @@
 ﻿using System;
+using static System.Math;
 
 namespace Task6_1
 {
     public class Bucket : Cylinder
     {
-        public double Fullness { get; private set; }
-        public double RemainingCapacity { get; }
+        public double VolumeFilled { get; private set; }
+        public double RemainingCapacity => Volume - VolumeFilled;
+        public bool IsFull => VolumeFilled == Volume;
+        public bool IsEmpty => VolumeFilled == 0;
 
-        public Bucket(double radius, double height, double fullness) : base(radius, height)
+        public Bucket(double radius, double height, double volumeFilled) : base(radius, height)
         {
-            if (fullness < 0)
+            if (volumeFilled < 0)
             {
-                throw new ArgumentOutOfRangeException(nameof(fullness));
+                throw new ArgumentOutOfRangeException(nameof(volumeFilled));
             }
 
-            double remainingCapacity = fullness <= Volume ? Volume - fullness : 0;
-
-            Fullness = fullness <= Volume ? fullness : Volume;
-            RemainingCapacity = remainingCapacity;
+            VolumeFilled = Min(volumeFilled, Volume);
         }
 
-        public bool IsFull() =>
-            Fullness == Volume;
+        public void PourIn(double quantity) => 
+            VolumeFilled = Min(VolumeFilled + quantity, Volume);
 
-        public bool IsEmpty() =>
-            Fullness == 0;
-
-        public void PourIn(double quantity)
-        {
-            if (Fullness + quantity <= Volume)
-            {
-                 Fullness += quantity;
-            }
-            else
-            {
-                Fullness = Volume;
-            }
-        }
-
-        public void PourOut(double quantity)
-        {
-            if (Fullness - quantity >= 0)
-            {
-                Fullness -= quantity;                
-            }
-            else
-            {
-                Fullness = 0;
-            }
-        }
+        public void PourOut(double quantity) =>
+            VolumeFilled = Max(VolumeFilled - quantity, 0);
 
         public void PourFrom(Bucket other)
         {
@@ -57,16 +33,10 @@ namespace Task6_1
                 throw new ArgumentNullException(nameof(other));
             }
 
-            if (RemainingCapacity >= other.Fullness)
-            {
-                Fullness += other.Fullness;
-                other.Fullness = 0;
-            }
-            else
-            {
-                Fullness = Volume;
-                other.Fullness -= RemainingCapacity;
-            }
+            double remainingCapacity = RemainingCapacity;
+
+            PourIn(other.VolumeFilled);
+            other.PourOut(remainingCapacity);
         }
     }
 }
