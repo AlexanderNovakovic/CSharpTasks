@@ -1,6 +1,0 @@
-C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task4_6\bin\Debug\Task4_6.dll
-C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task4_6\bin\Debug\Task4_6.pdb
-C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task4_6\obj\Debug\Task4_6.csprojAssemblyReference.cache
-C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task4_6\obj\Debug\Task4_6.csproj.CoreCompileInputs.cache
-C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task4_6\obj\Debug\Task4_6.dll
-C:\Users\aleksandar.novakovic\Documents\GitHub\CSharpTasks\Task4_6\obj\Debug\Task4_6.pdb
