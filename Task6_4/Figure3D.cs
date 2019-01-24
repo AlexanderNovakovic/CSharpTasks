@@ -43,10 +43,7 @@ namespace Task6_4
 
         public override int GetHashCode()
         {
-            unchecked
-            {
-                return Sigma.GetHashCode() ^ Mass.GetHashCode() ^ Volume.GetHashCode();
-            }
+            return Sigma.GetHashCode() ^ Mass.GetHashCode() ^ Volume.GetHashCode();
         }
     }
 }

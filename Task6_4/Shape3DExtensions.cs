@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Task6_4
 {
@@ -29,8 +31,24 @@ namespace Task6_4
             {
                 totalMass += shape.Mass;
             }
-            
+
             return totalMass / shapes.Count;
+
+        }
+
+        public static IEnumerable<Figure3D> Where(this IEnumerable<Figure3D> source, Func<Figure3D, bool> predicate)
+        {
+            List<Figure3D> figures = new List<Figure3D>();
+
+            foreach (var figure3D in source)
+            {
+                if (predicate(figure3D))
+                {
+                    figures.Add(figure3D);
+                }
+            }
+
+            return figures;
         }
     }
 }

@@ -8,7 +8,7 @@ namespace Task6_5.UnitTests
         [Theory]
         [MemberData(nameof(MoveToTestParams))]
         public void MoveToTests(Point point, double dx, double dy, Point expectedPoint) =>
-            Assert.Equal(expectedPoint, point.MoveTo(dx, dy));
+            Assert.Equal(expectedPoint, point.Move(dx, dy));
 
         public static IEnumerable<object[]> MoveToTestParams()
         {
