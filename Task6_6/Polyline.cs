@@ -13,7 +13,7 @@ namespace Task6_6
         public Polyline(Point[] points)
         {
             Points = points ?? throw new ArgumentNullException(nameof(points));
-            Lines = new Distance[Points.Length];
+            Lines = new Distance[Points.Length - 1];
             Length = 0;
 
             for (int i = 0; i < Points.Length - 1; i++)

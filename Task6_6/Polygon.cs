@@ -2,7 +2,7 @@
 
 namespace Task6_6
 {
-    public class Polygon : ILine
+    public class Polygon : Polyline
     {
         public Point[] Points { get; }
         public Distance[] Lines { get; }
@@ -11,7 +11,7 @@ namespace Task6_6
         public Polygon(Point[] points)
         {
             Points = points ?? throw new ArgumentNullException(nameof(points));
-            Lines = new Distance[Points.Length + 1];
+            Lines = new Distance[Points.Length];
             Length = 0;
 
             for (int i = 0; i < Points.Length - 1; i++)
