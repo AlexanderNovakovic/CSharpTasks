@@ -4,19 +4,19 @@ namespace Task6_6
 {
     public static class LineExtensions
     {
-        public static double Longest(List<Line> lines)
+        public static ILine Longest(this List<ILine> lines)
         {
-            double max = double.MinValue;
+            ILine longest = lines[0];
 
-            foreach (Line line in lines)
+            foreach (ILine line in lines)
             {
-                if (line.Length > max)
+                if (line.Length > longest.Length)
                 {
-                    max = line.Length;
+                    longest = line;
                 }
             }
 
-            return max;
+            return longest;
         }
     }
 }

@@ -42,7 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Distance.cs" />
-    <Compile Include="Line.cs" />
+    <Compile Include="ILine.cs" />
     <Compile Include="LineExtensions.cs" />
     <Compile Include="Point.cs" />
     <Compile Include="Polygon.cs" />
