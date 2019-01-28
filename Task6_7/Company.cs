@@ -15,14 +15,14 @@ namespace Task6_7
                 double totalIncome = 0;
                 double totalSalary = 0;
 
-                for (int i = 0; i < Employees.Count; i++)
+                foreach (var employee in Employees)
                 {
-                    if (Employees[i] is Merchant)
+                    if (employee is Merchant)
                     {
-                        totalIncome += Employees[i].Income;                      
+                        totalIncome += employee.Income;                      
                     }
 
-                    totalSalary += Employees[i].Salary;
+                    totalSalary += employee.Salary;
                 }
 
                 return totalIncome * ProfitPercentage / 100 - totalSalary;
@@ -59,5 +59,8 @@ namespace Task6_7
 
             Employees.RemoveAt(id);
         }
+
+        public double Profit2(double totalIncome, double totalSalary) =>
+            totalIncome * ProfitPercentage / 100 - totalSalary;
     }
 }

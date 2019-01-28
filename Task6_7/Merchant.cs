@@ -2,7 +2,7 @@
 
 namespace Task6_7
 {
-    public class Merchant : Employee, IEquatable<Merchant>
+    public class Merchant : Employee
     {
         private double _income;
         public double TotalSales { get; private set; }
@@ -25,33 +25,6 @@ namespace Task6_7
 
             TotalSales += value;
         }
-
-        public bool Equals(Merchant other)
-        {
-            if (other is null)
-            {
-                return false;
-            }
-
-            if (ReferenceEquals(this, other))
-            {
-                return true;
-            }
-
-            return Name == other.Name
-                   && SalaryPercentage == other.SalaryPercentage
-                   && Income == other.Income;
-        }
-
-        public override bool Equals(object obj) =>
-            Equals(obj as Merchant);
-
-        public override int GetHashCode()
-        {
-            unchecked
-            {
-                return (Name.GetHashCode() * 397) ^ SalaryPercentage.GetHashCode() ^ Income.GetHashCode();
-            }
-        }
     }
 }
+

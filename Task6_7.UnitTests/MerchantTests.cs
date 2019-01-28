@@ -7,9 +7,9 @@ namespace Task6_7.UnitTests
     {
         [Theory]
         [MemberData(nameof(SellTestParams))]
-        public void SellTests(Merchant merchant, double[] SoldValues, double expectedIncome, double expectedSalary)
+        public void SellTests(Merchant merchant, double[] soldValues, double expectedIncome, double expectedSalary)
         {
-            foreach (double value in SoldValues)
+            foreach (double value in soldValues)
             {
                 merchant.Sell(value);
             }
@@ -23,7 +23,7 @@ namespace Task6_7.UnitTests
             yield return new object[]
             {
                 new Merchant("Nenad", 5, 72),
-                SoldValues(new double[] {20.5, 30, 21.5}),
+                SoldValues(new[] {20.5, 30, 21.5}),
                 ExpectedIncome(72),
                 ExpectedSalary(3.6)
             };
