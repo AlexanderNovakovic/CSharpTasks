@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Xunit;
+using static Task6_7.UnitTests.Builders.Builders;
 
 namespace Task6_7.UnitTests
 {
@@ -7,19 +8,9 @@ namespace Task6_7.UnitTests
     {
         [Theory]
         [MemberData(nameof(AddTestParams))]
-        public void AddTests(List<Merchant> merchants, Manager manager, double expectedIncome, double expectedSalary)
+        public void AddTests(Manager manager, double expectedTotalSales, double expectedSalary)
         {
-            foreach (Merchant merchant in merchants)
-            {
-                manager.AddMerchant(merchant);
-            }
-
-            for (int i = 0; i < merchants.Count; i++)
-            {
-                Assert.True(merchants[i] == manager.Merchants[i]);
-            }
-
-            Assert.Equal(expectedIncome, manager.Income);
+            Assert.Equal(expectedTotalSales, manager.TotalSales);
             Assert.Equal(expectedSalary, manager.Salary);
         }
 
@@ -27,18 +18,19 @@ namespace Task6_7.UnitTests
         {
             yield return new object[]
             {
-                new List<Merchant>()
-                {
-                    new Merchant("Marko", 5, 20),
-                    new Merchant("Zoran", 6, 30)
-                },
-                new Manager("Nenad", 10, new List<Merchant>()),
-                ExpectedIncome(50),
+                AManager()
+                    .WithSalesPercentage(10)
+                    .WithEmployees(
+                        AMerchant()
+                            .WithSalesPercentage(5)
+                            .WithSales(20),
+                        AMerchant()
+                            .WithSalesPercentage(6)
+                            .WithSales(30)
+                    ),
+                ExpectedTotalSales(50),
                 ExpectedSalary(5)
             };
         }
-
-        public static double ExpectedIncome(double income) => income;
-        public static double ExpectedSalary(double salary) => salary;
     }
 }

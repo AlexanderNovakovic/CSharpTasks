@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Xunit;
+using static Task6_7.UnitTests.Builders.Builders;
 
 namespace Task6_7.UnitTests
 {
@@ -7,14 +8,9 @@ namespace Task6_7.UnitTests
     {
         [Theory]
         [MemberData(nameof(SellTestParams))]
-        public void SellTests(Merchant merchant, double[] soldValues, double expectedIncome, double expectedSalary)
+        public void SellTests(Merchant merchant, double expectedTotalSales, double expectedSalary)
         {
-            foreach (double value in soldValues)
-            {
-                merchant.Sell(value);
-            }
-
-            Assert.Equal(expectedIncome, merchant.Income);
+            Assert.Equal(expectedTotalSales, merchant.TotalSales);
             Assert.Equal(expectedSalary, merchant.Salary);
         }
 
@@ -22,15 +18,12 @@ namespace Task6_7.UnitTests
         {
             yield return new object[]
             {
-                new Merchant("Nenad", 5, 72),
-                SoldValues(new[] {20.5, 30, 21.5}),
-                ExpectedIncome(72),
+                AMerchant()
+                    .WithSalesPercentage(5)
+                    .WithSales(20.5, 30, 21.5),
+                ExpectedTotalSales(20.5 + 30 + 21.5),
                 ExpectedSalary(3.6)
             };
         }
-
-        public static double[] SoldValues(double[] values) => values;
-        public static double ExpectedIncome(double income) => income;
-        public static double ExpectedSalary(double salary) => salary;
     }
 }

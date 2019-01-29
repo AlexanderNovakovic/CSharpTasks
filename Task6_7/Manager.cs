@@ -5,37 +5,40 @@ namespace Task6_7
 {
     public class Manager : Employee
     {
-        public List<Merchant> Merchants { get; }
+        private List<Employee> Employees { get; }
 
-        public override double Income
+        public override double TotalSales
         {
             get
             {
                 double income = 0;
 
-                foreach (var merchant in Merchants)
+                foreach (var merchant in Employees)
                 {
-                    income += merchant.Income;
+                    income += merchant.TotalSales;
                 }
 
                 return income;
             }
+            protected set
+            {
+
+            }
         }
         
-        public Manager(string name, double salaryPercentage, List<Merchant> merchants) : base(name, salaryPercentage)
+        public Manager(string name, double salesPercentage) : base(name, salesPercentage)
         {
-            Merchants = merchants;
+            Employees = new List<Employee>();
         }
 
-        public void AddMerchant(Merchant merchant)
+        public void AddEmployee(Employee employee)
         {
-            if (merchant == null)
+            if (employee == null)
             {
                 throw new ArgumentNullException();
             }
 
-            Merchants.Add(merchant);
+            Employees.Add(employee);
         }
     }
 }
-

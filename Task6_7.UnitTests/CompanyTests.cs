@@ -5,6 +5,7 @@ namespace Task6_7.UnitTests
 {
     public class CompanyTests
     {
+        /*
         [Theory]
         [MemberData(nameof(HireTestParams))]
         public void HireTests(Company company, List<Employee> newEmployees, List<Employee> expectedEmployees, double expectedProfit)
@@ -123,5 +124,6 @@ namespace Task6_7.UnitTests
         public static List<Employee> ExpectedEmployees(List<Employee> employees) => employees;
         public static double ExpectedProfit(double profit) => profit;
         public static int Id(int id) => id;
+        */
     }
 }

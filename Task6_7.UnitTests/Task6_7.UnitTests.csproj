@@ -57,8 +57,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Builders\Builders.cs" />
+    <Compile Include="Builders\ManagerBuilder.cs" />
     <Compile Include="CompanyTests.cs" />
     <Compile Include="ManagerTests.cs" />
+    <Compile Include="Builders\MerchantBuilder.cs" />
     <Compile Include="MerchantTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

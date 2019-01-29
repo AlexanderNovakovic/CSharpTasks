@@ -12,24 +12,24 @@ namespace Task6_7
         {
             get
             {
-                double totalIncome = 0;
+                double totalSales = 0;
                 double totalSalary = 0;
 
                 foreach (var employee in Employees)
                 {
                     if (employee is Merchant)
                     {
-                        totalIncome += employee.Income;                      
+                        totalSales += employee.TotalSales;                      
                     }
 
                     totalSalary += employee.Salary;
                 }
 
-                return totalIncome * ProfitPercentage / 100 - totalSalary;
+                return totalSales * ProfitPercentage / 100 - totalSalary;
             }
         }
 
-        public Company(double profitPercentage, List<Employee> employees)
+        public Company(List<Employee> employees, double profitPercentage)
         {
             if (profitPercentage <= 0)
             {
@@ -37,7 +37,7 @@ namespace Task6_7
             }
             
             ProfitPercentage = profitPercentage;
-            Employees = employees;
+            Employees = employees ?? throw new ArgumentNullException(nameof(employees));
         }
 
         public void Hire(Employee employee)
@@ -50,17 +50,14 @@ namespace Task6_7
             Employees.Add(employee);            
         }
 
-        public void Fire(int id)
+        public void Fire(int index)
         {
-            if (id < 0 || id >= Employees.Count)
+            if (index < 0 || index >= Employees.Count)
             {
-                throw new ArgumentOutOfRangeException(nameof(id));
+                throw new ArgumentOutOfRangeException(nameof(index));
             }
 
-            Employees.RemoveAt(id);
+            Employees.RemoveAt(index);
         }
-
-        public double Profit2(double totalIncome, double totalSalary) =>
-            totalIncome * ProfitPercentage / 100 - totalSalary;
     }
 }

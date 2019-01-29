@@ -4,16 +4,10 @@ namespace Task6_7
 {
     public class Merchant : Employee
     {
-        private double _income;
-        public double TotalSales { get; private set; }
+        public override double TotalSales { get; protected set; }
 
-        public override double Income => _income;   
-
-        public Merchant(string name, double salaryPercentage, double income) : base(name, salaryPercentage)
+        public Merchant(string name, double salesPercentage) : base(name, salesPercentage)
         {
-            Name = name;
-            SalaryPercentage = salaryPercentage;
-            _income = income;
         }
 
         public void Sell(double value)
@@ -27,4 +21,3 @@ namespace Task6_7
         }
     }
 }
-
